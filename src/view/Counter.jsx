@@ -1,38 +1,14 @@
 import { useState } from "react";
 
-export function Counter() {
-  const [customerCount, setCustomerCount] = useState(2);
-  return (
-    <>
-          <h3 className="paragraph">Customers counter: {customerCount}</h3>
-          <button className="button" onClick={() => setCustomerCount(customerCount + 1)}>
-            add Customer
-          </button>
-    </>
-  );
-}
+export default function Counter({name}) {
+  const [count, setCount] = useState(2);
 
-export function Counter2 () {
-  const [employeeCount, setEmployeeCount] = useState(2);
   return (
-    <>
-        <h3 className="paragraph">Employees counter: {employeeCount}</h3>
-        <button className="button" onClick={() => setEmployeeCount(employeeCount + 1)}>
-          add Employees
+      <div className="hbox space-between mt20">
+        <h3 className="paragraph">{name} counter: {count}</h3>
+        <button className="button" onClick={() => setCount(count + 1)}>
+          add {name}
         </button>
-    </>
-  );
-}
-
-export function Books() {
-  const [booksCount, setBooksCount] = useState(2);
-
-  return (
-    <>
-      <h3 className="paragraph">Book counter: {booksCount}</h3>
-      <button className="button" onClick={() => setBooksCount(booksCount + 1)}>
-        add Book
-      </button>
-    </>
+      </div>
   );
 }
