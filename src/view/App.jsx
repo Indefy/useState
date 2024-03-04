@@ -1,7 +1,9 @@
 import TopBar from "./TopBar";
 import NameInput from "./NameInput";
 import Books from "./Books";
-import Counter2 from "./Counter2";
+import {Counter, Counter2} from "./Counter2";
+
+
 
 export default function App() {
 
@@ -13,6 +15,7 @@ export default function App() {
       <Books />
       </div>
       <hr />
+      <Counter />
       <Counter2 />
       <br />
       <hr />
