@@ -1,7 +1,6 @@
 import TopBar from "./TopBar";
 import NameInput from "./NameInput";
-import Books from "./Books";
-import {Counter, Counter2} from "./Counter2";
+import {Counter, Counter2, Books} from "./Counter";
 
 
 
